@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Web Forms and Javascript Objects</title>
-    <script src="/main.js"></script>    
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <form action="#" method="post" onsubmit="return ValidationEvent();">
+    <form enctype="multipart/form-data" method="post" onsubmit="return ValidationEvent();">
         <div name="divInput" id="divInput">
             <div>
                 <strong>Name:</strong>
@@ -23,9 +21,11 @@
                 <strong>Expiration Date:</strong>
                 <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" />
             </div>
-            <input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+            <input type="submit" name="btnSubmit" value="Submit">
         </div>
+        <br /><br />
         <div name="divDisplay" id="divDisplay" style="display:none;">
+            <h1>Product</h1>
             <div>
                 <strong>Name:</strong>
                 <span name="spanName" id="spanName"></span>
@@ -42,7 +42,7 @@
                 <strong>Expiration Date:</strong>
                 <span name="spanName" id="spanName"></span>
             </div>
-        </div>
+        </div>        
     </form>
 </body>
 </html>
