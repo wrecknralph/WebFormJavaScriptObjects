@@ -5,44 +5,80 @@
 <body>
     <form enctype="multipart/form-data" method="post" onsubmit="return ValidationEvent();">
         <div name="divInput" id="divInput">
-            <div>
-                <strong>Name:</strong>
-                <input type="text" name="txtName" id="txtName" maxlength="255" />
-            </div>
-            <div>
-                <strong>Price:</strong>
-                <input type="text" name="txtPrice" id="txtPrice" maxlength="255" />
-            </div>
-            <div>
-                <strong>Description:</strong>
-                <input type="text" name="txtDesc" id="txtDesc" maxlength="255" />
-            </div>
-            <div>
-                <strong>Expiration Date:</strong>
-                <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" />
-            </div>
+            <table style="text-align:right;">
+                <tr>
+                    <td>
+                        <strong>Name:</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="txtName" id="txtName" maxlength="255" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Description:</strong>
+                    </td>
+                    <td>                        
+                        <input type="text" name="txtDesc" id="txtDesc" maxlength="255" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Expiration Date:</strong>                        
+                    </td>
+                    <td>
+                        <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Price:</strong>                        
+                    </td>
+                    <td>
+                        <input type="text" name="txtPrice" id="txtPrice" maxlength="255" />
+                    </td>
+                </tr>
+            </table>            
             <input type="submit" name="btnSubmit" value="Submit">
         </div>
         <br /><br />
-        <div name="divDisplay" id="divDisplay" style="display:none;">
-            <h1>Product</h1>
-            <div>
-                <strong>Name:</strong>
-                <span name="spanName" id="spanName"></span>
-            </div>
-            <div>
-                <strong>Price:</strong>
-                <span name="spanName" id="spanName"></span>
-            </div>
-            <div>
-                <strong>Description:</strong>
-                <span name="spanName" id="spanName"></span>
-            </div>
-            <div>
-                <strong>Expiration Date:</strong>
-                <span name="spanName" id="spanName"></span>
-            </div>
-        </div>        
+              <div name="divDisplay" id="divDisplay" style="display:none;">
+                  <h1>Product</h1>
+                  <table style="text-align:right;">
+                      <tr>
+                          <td>
+                              <strong>Name:</strong>
+                          </td>
+                          <td>
+                              <span name="spanName" id="spanName"></span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <strong>Description:</strong>
+                          </td>
+                          <td>
+                              <span name="spanPrice" id="spanPrice"></span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <strong>Expiration Date:</strong>
+                          </td>
+                          <td>
+                              <span name="spanDesc" id="spanDesc"></span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <strong>Price:</strong>
+                          </td>
+                          <td>
+                              <span name="spanExpDate" id="spanExpDate"></span>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
     </form>
 </body>
 </html>
