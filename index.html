@@ -2,8 +2,8 @@
 <head>
     <script src="js/main.js"></script>
 </head>
-<body>        
-    <form enctype="multipart/form-data" method="post" onsubmit="return ValidationEvent();">
+<body onload="onLoad();">        
+    <form enctype="multipart/form-data" method="post" action="#" onsubmit="return ValidationEvent();">
         <div name="divInput" id="divInput">
             <h1>Enter Product:</h1>
             <table style="text-align:right;">
@@ -11,7 +11,7 @@
                     <td>
                         <strong>Name:</strong>
                     </td>
-                    <td>
+                    <td width="800px" style="text-align:left;">
                         <input type="text" name="txtName" id="txtName" maxlength="255" /> &nbsp;<span name="spanNameErrors" id="spanNameErrors" style="color: red;"></span>
                     </td>
                 </tr>
@@ -19,15 +19,15 @@
                     <td>
                         <strong>Price:</strong>
                     </td>
-                    <td>
-                        <input type="text" name="txtPrice" id="txtPrice" maxlength="255" /> &nbsp;<span name="spanPriceErrors" id="spanPriceErrors" style="color: red;"></span>
+                    <td width="800px" style="text-align:left;">
+                        <input type="text" name="txtPrice" id="txtPrice" maxlength="255" onkeypress="return onlyNumberKey(event);" /> &nbsp;<span name="spanPriceErrors" id="spanPriceErrors" style="color: red;"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <strong>Description:</strong>
                     </td>
-                    <td>
+                    <td width="800px" style="text-align:left;">
                         <input type="text" name="txtDesc" id="txtDesc" maxlength="15" /> &nbsp;<span name="spanDescErrors" id="spanDescErrors" style="color: red;"></span>
                     </td>
                 </tr>
@@ -35,8 +35,8 @@
                     <td>
                         <strong>Expiration Date:</strong>
                     </td>
-                    <td>
-                        <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" /> &nbsp;<span name="spanDescErrors" id="spanDescErrors" style="color: red;"></span>
+                    <td width="800px" style="text-align:left;">
+                        <input type="text" name="txtExpDate" id="txtExpDate" maxlength="15"  onkeypress="return onlyDateKey(event);" /> &nbsp;<span name="spanExpDateErrors" id="spanExpDateErrors" style="color: red;"></span>
                     </td>
                 </tr>
             </table>        
@@ -44,7 +44,7 @@
             <input type="submit" name="btnSubmit" value="Submit">
         </div>
         <br /><br />
-              <div name="divDisplay" id="divDisplay" style="display:none;">
+              <div name="divDisplay" id="divDisplay">
                   <h1>Product</h1>
                   <table style="text-align:right;">
                       <tr>
