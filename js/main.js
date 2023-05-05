@@ -58,8 +58,7 @@ function ValidationEvent() {
 function onlyNumberKey(evt) {
 
     // Only ASCII character in that range allowed
-    var ASCIICode = (evt.which) ? evt.which : evt.keyCode    
-    alert(ASCIICode);
+    var ASCIICode = (evt.which) ? evt.which : evt.keyCode        
     if (ASCIICode == 46) {
         return true;
     }
