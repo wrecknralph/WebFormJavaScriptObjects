@@ -4,6 +4,44 @@
     <title>Web Forms and Javascript Objects</title>    
 </head>
 <body>
-
+    <form id="frmProduct" name="frmProduct">
+        <div name="divInput" id="divInput">
+            <div>
+                <strong>Name:</strong>
+                <input type="text" name="txtName" id="txtName" maxlength="255" />
+            </div>
+            <div>
+                <strong>Price:</strong>
+                <input type="text" name="txtPrice" id="txtPrice" maxlength="255" />
+            </div>
+            <div>
+                <strong>Description:</strong>
+                <input type="text" name="txtDesc" id="txtDesc" maxlength="255" />
+            </div>
+            <div>
+                <strong>Expiration Date:</strong>
+                <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" />
+            </div>
+            <input type="button" name="btnSubmit" id="btnSubmit" />
+        </div>
+        <div name="divDisplay" id="divDisplay" style="display:none;">
+            <div>
+                <strong>Name:</strong>
+                <span name="spanName" id="spanName"></span>
+            </div>
+            <div>
+                <strong>Price:</strong>
+                <span name="spanName" id="spanName"></span>
+            </div>
+            <div>
+                <strong>Description:</strong>
+                <span name="spanName" id="spanName"></span>
+            </div>
+            <div>
+                <strong>Expiration Date:</strong>
+                <span name="spanName" id="spanName"></span>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
