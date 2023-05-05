@@ -2,43 +2,45 @@
 <head>
     <script src="js/main.js"></script>
 </head>
-<body>
+<body>        
     <form enctype="multipart/form-data" method="post" onsubmit="return ValidationEvent();">
         <div name="divInput" id="divInput">
+            <h1>Enter Product:</h1>
             <table style="text-align:right;">
                 <tr>
                     <td>
                         <strong>Name:</strong>
                     </td>
                     <td>
-                        <input type="text" name="txtName" id="txtName" maxlength="255" />
+                        <input type="text" name="txtName" id="txtName" maxlength="255" /> &nbsp;<span name="spanNameErrors" id="spanNameErrors" style="color: red;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Price:</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="txtPrice" id="txtPrice" maxlength="255" /> &nbsp;<span name="spanPriceErrors" id="spanPriceErrors" style="color: red;"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <strong>Description:</strong>
                     </td>
-                    <td>                        
-                        <input type="text" name="txtDesc" id="txtDesc" maxlength="255" />
+                    <td>
+                        <input type="text" name="txtDesc" id="txtDesc" maxlength="15" /> &nbsp;<span name="spanDescErrors" id="spanDescErrors" style="color: red;"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <strong>Expiration Date:</strong>                        
+                        <strong>Expiration Date:</strong>
                     </td>
                     <td>
-                        <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" />
+                        <input type="text" name="txtExpDate" id="txtExpDate" maxlength="255" /> &nbsp;<span name="spanDescErrors" id="spanDescErrors" style="color: red;"></span>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <strong>Price:</strong>                        
-                    </td>
-                    <td>
-                        <input type="text" name="txtPrice" id="txtPrice" maxlength="255" />
-                    </td>
-                </tr>
-            </table>            
+            </table>        
+            <br /><br />
             <input type="submit" name="btnSubmit" value="Submit">
         </div>
         <br /><br />
